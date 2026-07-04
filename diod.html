@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Diod + Alexandrite Laser</title>
+<title>Diod + Alexandrite</title>
 
 <style>
 body{
@@ -13,64 +13,100 @@ margin:0;
 padding:20px;
 }
 
-.card{
-background:white;
-padding:20px;
-border-radius:12px;
-max-width:800px;
+.container{
+max-width:1200px;
 margin:auto;
+}
+
+h1{
+text-align:center;
+margin-bottom:40px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.card{
+background:#fff;
+border-radius:15px;
+padding:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+text-align:center;
+}
+
+.card img{
+width:100%;
+height:260px;
+object-fit:cover;
+border-radius:12px;
+}
+
+.price{
+font-size:22px;
+font-weight:bold;
+color:#ff7a00;
+margin:15px 0;
 }
 
 .btn{
 display:inline-block;
-background:orange;
+padding:12px 22px;
+background:#ff7a00;
+color:#fff;
+text-decoration:none;
+border-radius:8px;
+font-weight:bold;
+}
+
+.back{
+display:block;
+width:220px;
+margin:40px auto 0;
+text-align:center;
+padding:14px;
+background:#222;
 color:white;
-padding:12px 20px;
 text-decoration:none;
 border-radius:8px;
 }
-
-img{
-width:100%;
-max-width:500px;
-display:block;
-margin:20px auto;
-border-radius:12px;
-}
 </style>
-</head>
 
+</head>
 <body>
 
+<div class="container">
+
+<h1>Diod + Alexandrite</h1>
+
+<div class="grid">
+
 <div class="card">
+<img src="diomax.jpg" alt="DIOMAX NEW">
+<h2>DIOMAX NEW</h2>
+<div class="price">18.000 AZN</div>
+<a class="btn" href="diomax-new.html">Ətraflı Bax</a>
+</div>
 
-<h1>Diod + Alexandrite Laser</h1>
+<div class="card">
+<img src="placeholder.jpg" alt="Yeni Model">
+<h2>Yeni Model</h2>
+<div class="price">Qiymət sorğu ilə</div>
+<a class="btn" href="#">Ətraflı Bax</a>
+</div>
 
-<img src="file_0000000085387243a8c857139537495e.png" alt="Diod + Alexandrite Laser">
+<div class="card">
+<img src="placeholder.jpg" alt="Yeni Model">
+<h2>Yeni Model</h2>
+<div class="price">Qiymət sorğu ilə</div>
+<a class="btn" href="#">Ətraflı Bax</a>
+</div>
 
-<p><b>Nağd qiymət:</b> 18.000 AZN</p>
-<p><b>Kredit qiyməti:</b> 18.000 AZN</p>
+</div>
 
-<h2>Texniki xüsusiyyətlər</h2>
-
-<ul>
-<li>755 nm Alexandrite</li>
-<li>808 nm Diode</li>
-<li>1064 nm Nd:YAG</li>
-<li>Güclü soyutma sistemi</li>
-<li>Maksimum kredit müddəti: 24 ay</li>
-</ul>
-
-<h2>Kredit Şərtləri</h2>
-
-<ul>
-<li>İlkin ödəniş: Razılaşma ilə</li>
-<li>12 ay kredit</li>
-<li>18 ay kredit</li>
-<li>24 ay kredit</li>
-</ul>
-
-<a class="btn" href="index.html">Ana Səhifəyə Qayıt</a>
+<a class="back" href="index.html">← Ana Səhifəyə Qayıt</a>
 
 </div>
 
