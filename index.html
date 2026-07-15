@@ -28,20 +28,36 @@ section{
 }
 
 .card{
-    background:white;
-    padding:20px;
-    border-radius:10px;
-    margin-bottom:20px;
-    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+    background:#ffffff;
+    padding:25px;
+    border-radius:18px;
+    margin-bottom:25px;
+    border:1px solid #e8d8a8;
+    box-shadow:0 10px 30px rgba(0,0,0,0.12);
+    transition:0.3s;
 }
+
+.card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 18px 40px rgba(0,0,0,0.18);
+}
+    
 
 .btn{
     display:inline-block;
-    background:#25D366;
-    color:white;
-    padding:12px 20px;
+    background:linear-gradient(135deg,#d4af37,#f7d774);
+    color:#111;
+    padding:14px 24px;
     text-decoration:none;
-    border-radius:8px;
+    border-radius:12px;
+    font-weight:bold;
+    transition:0.3s;
+    box-shadow:0 6px 18px rgba(212,175,55,0.35);
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 25px rgba(212,175,55,0.5);
 }
     .navbar{
     background:#000;
