@@ -128,8 +128,8 @@ margin-top:20px;
     margin-bottom:18px;
 }
 .product-card:hover{
-transform:translateY(-6px);
-box-shadow:0 18px 40px rgba(0,0,0,0.18);
+    transform:translateY(-10px) scale(1.02);
+    box-shadow:0 20px 45px rgba(0,0,0,0.20);
 }
 
 
@@ -145,10 +145,22 @@ margin:8px 0;
 font-size:16px;
 }
 
-.product-card .btn{
-margin-top:15px;
-display:inline-block;
-}    
+  .product-card .btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 24px;
+    background:linear-gradient(135deg,#d4af37,#f7d774);
+    color:#111;
+    text-decoration:none;
+    font-weight:bold;
+    border-radius:30px;
+box-shadow:0 8px 20px rgba(212,175,55,0.35);
+transition:0.3s; 
+} 
+    .product-card .btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 12px 25px rgba(212,175,55,0.5);
+  } 
 </style>
 </head>
 
@@ -202,21 +214,33 @@ display:inline-block;
 <div class="product-card">
 <img src="/Ss--Estetik--Group/file_00000000d0a8720aa145133ed1e0340a.png" alt="Kandela Alexandrite Pro">
 <h3>Kandela Alexandrite Pro</h3>
-<p><b>Nağd qiymət:</b> 43.000 AZN</p>
-<p><b>Kredit qiyməti:</b> 48.000 AZN</p>
+<p style="color:#d4af37;font-size:18px;font-weight:bold;">
+💰 Nağd: 43.000 AZN
+</p>
+
+<p style="color:#444;font-size:17px;">
+💳 Kredit: 48.000 AZN
+</p>
 <a class="btn" href="kandela.html">Ətraflı Bax</a>
 </div>
 
 <div class="product-card">
 <img src="file_0000000096b871f4b3291125e3393c1c.png" alt="Mini Kandela">
 <h3>Mini Kandela</h3>
-<p><b>Nağd qiymət:</b> 23.000 AZN</p>
-<p><b>Kredit qiyməti:</b> 29.000 AZN</p>
+<p style="color:#d4af37;font-size:18px;font-weight:bold;">
+💰 Nağd: 23.000 AZN
+</p>
+
+<p style="color:#444;font-size:17px;">
+💳 Kredit: 29.000 AZN
+</p>
 </div>
  <div class="product-card">
 <img src="file_00000000cfc4720aae3b8bd3ae0ee193.png" alt="Diod + Alexandrite Laser">
 <h3>Diod + Alexandrite Laser</h3>
-<p><b>Qiymət:</b> 18.000 AZN</p>
+     <p style="color:#d4af37;font-size:18px;font-weight:bold;">
+💰 Qiymət: 18.000 AZN
+     </p>
 <a class="btn" href="diod.html">Ətraflı Bax</a>
 </div>
 
