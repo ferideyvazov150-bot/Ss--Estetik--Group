@@ -75,19 +75,27 @@ section{
     transform:translateY(-3px);
     box-shadow:0 10px 25px rgba(212,175,55,0.5);
 }
-    .navbar{
-    background:#000;
-    padding:15px;
+.navbar{
+    background:rgba(10,10,10,0.95);
+    backdrop-filter:blur(10px);
+    padding:18px;
     text-align:center;
+    position:sticky;
+    top:0;
+    z-index:999;
+    border-bottom:1px solid rgba(212,175,55,0.3);
+    box-shadow:0 4px 15px rgba(0,0,0,0.35);
 }
+
 
 .navbar a{
     color:#f7d774;
     text-decoration:none;
     margin:0 18px;
-    font-weight:bold;
+    font-weight:600;
     font-size:16px;
     transition:0.3s;
+    letter-spacing:0.5px;
 }
 
 .navbar a:hover{
