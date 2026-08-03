@@ -155,6 +155,22 @@ margin-top:20px;
     margin-bottom:18px;
     transition: transform 0.4s ease;
 }
+    .product-card::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:linear-gradient(to top, rgba(0,0,0,0.18), transparent 50%);
+opacity:0;
+transition:0.3s;
+pointer-events:none;
+}
+
+.product-card:hover::before{
+opacity:1;
+}
 .product-card:hover{
     transform:translateY(-10px) scale(1.02);
     box-shadow:0 25px 55px rgba(212,175,55,0.25);
