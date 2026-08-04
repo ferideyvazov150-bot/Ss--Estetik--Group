@@ -82,12 +82,15 @@ section{
     background:rgba(10,10,10,0.95);
     backdrop-filter:blur(10px);
     padding:18px;
-    text-align:center;
+    
     position:sticky;
     top:0;
     z-index:999;
     border-bottom:1px solid rgba(212,175,55,0.3);
     box-shadow:0 4px 15px rgba(0,0,0,0.35);
+    display:flex;
+align-items:center;
+justify-content:space-between;
 }
 
 
@@ -105,6 +108,12 @@ section{
     color:#ffffff;
     text-shadow:0 0 10px #d4af37;
 }
+    .logo img{
+    width:60px;
+    height:60px;
+    object-fit:contain;
+    display:block;
+    }
 
 .category{
     background:#1a1a1a;
@@ -227,6 +236,9 @@ text-align:center;
 
 <body>
 <div class="navbar">
+    <a href="index.html" class="logo">
+    <img src="file_0000000062e081f4a5aa407605faf634.png" alt="SS Estetik Group MMC">
+    </a>
     <a href="#hero">Ana Səhifə</a>
     <a href="#mehsullar">Məhsullar</a>
     <a href="#kateqoriyalar">Kateqoriyalar</a>
