@@ -19,8 +19,8 @@
 .hero{
     background-color:#111;
     background-image:url('/Ss--Estetik--Group/file_000000000d04720a9313f6f9caf5d737.png');
-    background-size:cover;
-    background-position:center;
+    background-size: 100%;
+    background-position: center top;
     background-repeat:no-repeat;
     color:#fff;
     text-align:center;
@@ -33,7 +33,13 @@ align-items:center;
     border-bottom:4px solid #d4af37;
     box-shadow:0 8px 25px rgba(0,0,0,0.3);
 }
-
+@media (max-width: 768px){
+    .hero{
+        background-size: contain;
+        background-position: center top;
+        min-height: 220px;
+    }
+}
 header h1{
     margin:0;
     font-size:32px;
