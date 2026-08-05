@@ -159,9 +159,19 @@ gap:20px;
 .category{
     background:#1a1a1a;
     color:white;
-    padding:15px;
-    border-radius:10px;
-    margin-bottom:15px;
+    padding:18px;
+    border-radius:16px;
+    margin-bottom:18px;
+    transition:0.35s ease;
+    cursor:pointer;
+    border:1px solid transparent;
+}
+    .category:hover{
+    transform:translateX(8px);
+    background:#222;
+    border-color:#d4af37;
+    box-shadow:0 12px 30px rgba(212,175,55,0.35);
+    }
 }.products{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
