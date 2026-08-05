@@ -19,7 +19,8 @@
 .hero{
     background-color:#111;
     background-image:url('/Ss--Estetik--Group/file_000000000d04720a9313f6f9caf5d737.png');
-    background-size: 100%;
+    background-size:105%;
+animation:heroZoom 12s ease-in-out infinite alternate;
     background-position: center top;
     background-repeat:no-repeat;
     color:#fff;
@@ -318,6 +319,18 @@ text-align:center;
 .product-card:nth-child(3){
     animation-delay:.6s;
 }
+    @keyframes heroZoom{
+    from{
+        from{
+    background-size:100%;
+    }
+    }
+    to{
+        to{
+    background-size:120%;
+    }
+    }
+    }
 </style>
 </head>
 
