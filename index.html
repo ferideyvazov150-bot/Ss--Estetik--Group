@@ -93,6 +93,30 @@ margin:25px auto;
     transform:translateY(-3px);
     box-shadow:0 10px 25px rgba(212,175,55,0.5);
 }
+    .btn{
+    position:relative;
+    overflow:hidden;
+}
+
+.btn::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:-120%;
+    width:60%;
+    height:100%;
+    background:linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,0.7),
+        transparent
+    );
+    transition:0.7s;
+}
+
+.btn:hover::before{
+    left:160%;
+}
 .navbar{
     background:rgba(10,10,10,0.95);
     backdrop-filter:blur(10px);
@@ -194,14 +218,14 @@ pointer-events:none;
 opacity:1;
 }
 .product-card:hover{
-    transform:translateY(-10px) scale(1.02);
-    box-shadow:0 25px 55px rgba(212,175,55,0.25);
-    border-color:#d4af37;
-    outline:2px solid #d4af37;
+    transform:translateY(-12px) scale(1.03);
+    box-shadow:0 30px 60px rgba(212,175,55,0.35);
+    border-color:#f7d774;
+    outline:2px solid rgba(212,175,55,0.4);
 }
     
     .product-card:hover img{
-    transform:scale(1.06);
+    transform:scale(1.08) rotate(.5deg);
     }
 
 
@@ -244,6 +268,34 @@ text-align:center;
     margin-top:60px;
     border-top:2px solid #d4af37;
     }
+    @keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(50px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.card,
+.product-card{
+    opacity:0;
+    animation:fadeUp .8s ease forwards;
+}
+
+.product-card:nth-child(1){
+    animation-delay:.2s;
+}
+
+.product-card:nth-child(2){
+    animation-delay:.4s;
+}
+
+.product-card:nth-child(3){
+    animation-delay:.6s;
+}
 </style>
 </head>
 
