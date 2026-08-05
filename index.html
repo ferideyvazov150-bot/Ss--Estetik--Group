@@ -18,7 +18,7 @@ body{
 .hero{
     background-color:#111;
     background-image:url('/Ss--Estetik--Group/file_000000000d04720a9313f6f9caf5d737.png');
-    background-size:110%;
+    background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
     color:#fff;
@@ -90,7 +90,9 @@ section{
     box-shadow:0 4px 15px rgba(0,0,0,0.35);
     display:flex;
 align-items:center;
-justify-content:space-between;
+justify-content:center;
+flex-wrap:wrap;
+gap:20px;
 }
 
 
@@ -142,14 +144,10 @@ position:relative;
     justify-content:space-between;
     min-height:620px;
 }
-.products{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:25px;
-}
+
 .product-grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
 gap:25px;
 margin-top:20px;
 }
