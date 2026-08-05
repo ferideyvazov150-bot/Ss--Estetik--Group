@@ -204,6 +204,7 @@ margin-top:20px;
     .product-card::before{
 content:"";
 position:absolute;
+ z-index:2;
 top:0;
 left:0;
 width:100%;
@@ -219,6 +220,7 @@ transition:transform .7s ease, opacity .3s ease;
 opacity:0;
 
 pointer-events:none;
+border-radius:20px;
 }
 
 .product-card:hover::before{
@@ -233,6 +235,8 @@ pointer-events:none;
 }
     
     .product-card:hover img{
+        position:relative;
+z-index:1;
     transform:scale(1.08) rotate(.5deg);
     }
 
