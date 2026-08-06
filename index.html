@@ -30,12 +30,37 @@ animation:heroZoom 12s ease-in-out infinite alternate;
     padding:20px;
 min-height:280px;
 display:flex;
+    position:relative;
+overflow:hidden;
 flex-direction:column;
 justify-content:center;
 align-items:center;
     border-bottom:4px solid #d4af37;
-    box-shadow:0 8px 25px rgba(0,0,0,0.3);
+box-shadow:
+0 15px 40px rgba(0,0,0,.35),
+0 0 60px rgba(212,175,55,.18);
 }
+    .hero::after{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:radial-gradient(circle at top,
+        rgba(212,175,55,0.15),
+        transparent 60%);
+    pointer-events:none;
+        animation: heroGlow 6s ease-in-out infinite alternate;
+    }
+    @keyframes heroGlow{
+    from{
+        opacity:.35;
+    }
+    to{
+        opacity:.9;
+    }
+    }
 @media (max-width: 768px){
     .hero{
         background-size: contain;
@@ -85,7 +110,9 @@ margin:25px auto;
 
 .btn{
     display:inline-block;
-    background:linear-gradient(135deg,#d4af37,#f7d774);
+    position:relative;
+overflow:hidden;
+ background:linear-gradient(135deg,#d4af37,#f7d774);
     color:#111;
     padding:14px 24px;
     text-decoration:none;
@@ -154,6 +181,8 @@ gap:20px;
 .navbar a:hover{
     color:#ffffff;
     text-shadow:0 0 10px #d4af37;
+    transform:translateY(-2px);
+transition:all .3s ease;
 }
     .logo img{
     width:60px;
