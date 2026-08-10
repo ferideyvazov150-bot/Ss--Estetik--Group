@@ -111,25 +111,30 @@ margin:25px auto;
 .btn{
     display:inline-block;
     position:relative;
-overflow:hidden;
- background:linear-gradient(135deg,#d4af37,#f7d774);
+    overflow:hidden;
+
+    margin-top:20px;
+    padding:14px 30px;
+
+    background:linear-gradient(135deg,#d4af37,#f7d774);
     color:#111;
-    padding:14px 24px;
-    text-decoration:none;
+
+    border:1px solid #f7d774;
     border-radius:12px;
-    font-weight:bold;
-    transition:0.3s;
-    box-shadow:0 6px 18px rgba(212,175,55,0.35);
+
+    font-size:17px;
+    font-weight:700;
+    text-decoration:none;
+
+    box-shadow:0 8px 25px rgba(212,175,55,.35);
+    transition:all .3s ease;
 }
 
 .btn:hover{
     transform:translateY(-3px);
     box-shadow:0 10px 25px rgba(212,175,55,0.5);
 }
-    .btn{
-    position:relative;
-    overflow:hidden;
-}
+
 
 .btn::before{
     content:"";
