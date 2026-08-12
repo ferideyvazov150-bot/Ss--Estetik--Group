@@ -324,6 +324,20 @@ border-radius:20px;
     border-color:#f7d774;
     outline:2px solid rgba(212,175,55,0.4);
 }
+    .product-card:hover::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    border-radius:20px;
+    pointer-events:none;
+    background:linear-gradient(
+        135deg,
+        rgba(255,255,255,.18),
+        transparent 35%,
+        transparent 65%,
+        rgba(212,175,55,.08)
+    );
+    }
     
     .product-card:hover img{
         position:relative;
@@ -332,35 +346,61 @@ z-index:1;
     }
 
 
-
 .product-card h3{
-margin:12px 0;
-color:#222;
-font-size:22px;
+    margin:14px 0 8px;
+    color:#222;
+    font-size:22px;
+    font-weight:800;
     text-transform:uppercase;
-letter-spacing:1px;
+    letter-spacing:1px;
+    line-height:1.25;
+    transition:all .3s ease;
+}
+
+.product-card:hover h3{
+    color:#d4af37;
+    transform:translateY(-2px);
+    text-shadow:0 3px 10px rgba(212,175,55,.25);
 }
 
 .product-card p{
-margin:8px 0;
-font-size:16px;
+    margin:10px 0;
+    font-size:18px;
+    font-weight:700;
+    color:#d4af37;
+    letter-spacing:.5px;
+    transition:all .3s ease;
+}
+
+.product-card:hover p{
+    transform:scale(1.05);
+    text-shadow:0 3px 12px rgba(212,175,55,.35);
 }
 
   .product-card .btn{
     display:inline-block;
     margin-top:20px;
-    padding:12px 24px;
-    background:linear-gradient(135deg,#d4af37,#f7d774);
+    padding:14px 28px;
+    background:linear-gradient(135deg,#d4af37,#f7d774,#d4af37);
+    background-size:200% auto;
     color:#111;
     text-decoration:none;
-    font-weight:bold;
+    font-weight:800;
+    font-size:16px;
+    border:1px solid #d4af37;
     border-radius:30px;
-box-shadow:0 8px 20px rgba(212,175,55,0.35);
-transition:0.3s; 
-width:180px;
-align-self:center;
-text-align:center;      
-} 
+    box-shadow:0 8px 25px rgba(212,175,55,.35);
+    transition:all .35s ease;
+    width:190px;
+    align-self:center;
+    text-align:center;
+}
+
+.product-card .btn:hover{
+    background-position:right center;
+    transform:translateY(-5px) scale(1.04);
+    box-shadow:0 14px 30px rgba(212,175,55,.55);
+}
     .product-card .btn:hover{
     transform:translateY(-3px);
     box-shadow:0 12px 25px rgba(212,175,55,0.5);
