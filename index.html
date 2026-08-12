@@ -61,6 +61,30 @@ box-shadow:
         opacity:.9;
     }
     }
+    .hero-slide{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    z-index:1;
+        opacity:0;
+transition:opacity 1s ease;
+}
+
+.hero-slide.active{
+    opacity:1;
+}
+
+.hero-content{
+    position:relative;
+    z-index:3;
+}
 @media (max-width: 768px){
     .hero{
         background-size: contain;
@@ -477,7 +501,31 @@ z-index:1;
             <a href="#mehsullar" class="btn">Məhsullara Bax</a>
         </div>
     </div>
+<div class="hero-slide">
+    <div class="hero-content">
+        <h1>Kosmetoloji Cihazlar</h1>
+        <p>Premium kosmetoloji cihazlar və professional avadanlıqlar</p>
+        <a href="#mehsullar" class="btn">Məhsullara Bax</a>
+    </div>
+</div>
 
+
+
+<div class="hero-slide">
+    <div class="hero-content">
+        <h1>Saç Baxım Məhsulları</h1>
+        <p>Professional saç baxımı və qulluq məhsulları</p>
+        <a href="#mehsullar" class="btn">Məhsullara Bax</a>
+    </div>
+</div>
+
+<div class="hero-slide">
+    <div class="hero-content">
+        <h1>Salon Malları</h1>
+        <p>Gözəllik salonları üçün professional məhsullar</p>
+        <a href="#mehsullar" class="btn">Məhsullara Bax</a>
+    </div>
+</div>
     </header>
 <div class="card">
 <h2 id="kateqoriyalar">Kateqoriyalar</h2>
@@ -585,5 +633,17 @@ AOS.init({
     once: true
 });
 </script>
+   <script>
+const slides = document.querySelectorAll('.hero-slide');
+let currentSlide = 0;
+
+setInterval(() => {
+    slides[currentSlide].classList.remove('active');
+
+    currentSlide = (currentSlide + 1) % slides.length;
+
+    slides[currentSlide].classList.add('active');
+}, 5000);
+   </script> 
 </body>
 </html>
