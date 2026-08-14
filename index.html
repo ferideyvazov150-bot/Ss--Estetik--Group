@@ -865,6 +865,80 @@ z-index:1;
         padding: 11px 21px;
     }
 }
+    /* 📱 MOBİL TELEFON ÜÇÜN DÜZƏLİŞ */
+@media (max-width: 768px) {
+
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  .navbar {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    text-align: center;
+  }
+
+  .navbar a {
+    font-size: 18px;
+    padding: 8px 4px;
+    white-space: nowrap;
+  }
+
+  /* HERO */
+  .hero {
+    width: 100%;
+    height: 430px;
+    min-height: 430px;
+    overflow: hidden;
+  }
+
+  .hero-slide {
+    width: 100%;
+    height: 430px;
+    min-height: 430px;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  /* Telefonda şəkilin üstündə əlavə yazılar olmasın */
+  .hero-content {
+    display: none !important;
+  }
+
+  /* Kategoriyalar */
+  .card {
+    width: calc(100% - 24px);
+    margin: 20px auto;
+    padding: 25px 18px;
+    box-sizing: border-box;
+  }
+
+  .card h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .category {
+    width: 100%;
+    min-height: 58px;
+    margin: 10px 0;
+    padding: 16px 18px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border-radius: 18px;
+  }
+
+  /* Aşağıdakı boşluq yaranmasın */
+  section {
+    margin-top: 0;
+  }
+}
     </style>
 
 <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
