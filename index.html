@@ -89,7 +89,7 @@ transition:opacity 1s ease;
     .hero{
         background-size: contain;
         background-position: center top;
-        min-height: 220px;
+        min-height: 200px;
     }
 }
 header h1{
@@ -478,6 +478,31 @@ z-index:1;
     }
     }
     }
+    .hero-label{
+    position:absolute;
+    top:18px;
+    right:18px;
+    z-index:10;
+
+    color:#d4af37;
+    background:rgba(0,0,0,0.55);
+    border:1px solid #d4af37;
+    border-radius:12px;
+
+    padding:8px 14px;
+    font-size:18px;
+    font-weight:bold;
+    text-align:center;
+}
+
+@media(max-width:600px){
+    .hero-label{
+        top:12px;
+        right:12px;
+        padding:7px 12px;
+        font-size:16px;
+    }
+}
     </style>
 
 <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
@@ -494,14 +519,25 @@ z-index:1;
     <header id="hero" class="hero">
 
 <div class="hero-slide active"
-     style="background-image:url('/Ss--Estetik--Group/file_000000000d04720a9313f6f9caf5d737.png');">
-<div style="position:absolute;top:18px;right:18px;background:rgba(0,0,0,.55);color:#fff;padding:6px 12px;border-radius:20px;font-size:14px;font-weight:bold;">Lazer Avadanlıqları</div>
-</div>
-    </div>
- <div class="hero-slide"
-     style="background-image:url('/Ss--Estetik--Group/file_0000000030bc81f483dcf4e2a83ad675.png');">
+style="background-image:url('/Ss--Estetik--Group/file_000000000d04720a9313f6f9caf5d737.png');">
 
- </div>       
+    <div class="hero-content">
+        <h1>Lazer Avadanlıqları</h1>
+        <p>Professional lazer avadanlıqları</p>
+        <a href="#mehsullar" class="btn">Məhsullara Bax</a>
+    </div>
+
+</div>
+        <div class="hero-slide"
+style="background-image:url('/Ss--Estetik--Group/file_000000030bc81f483dcf4e2e83ad675.png');">
+
+    <div class="hero-content">
+        <h1>Kosmetoloji Preparatlar</h1>
+        <p>Premium kosmetoloji preparatlar</p>
+        <a href="#mehsullar" class="btn">Məhsullara Bax</a>
+    </div>
+
+        </div>
 
 
 
